@@ -1,23 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La VITA</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La VITA</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    <nav>
-      <div class="navbar">
-        <h1>La Vita</h1>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Menu</li>
-        </ul>
-        <div class="basket"></div>
-      </div>
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="images/food-logo.png" alt="">
+    </a>
+    <nav class="navbar active">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="products.html">Products</a>
+      <a href="review.html">Review</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
+      <a href="add.html">Add</a>
+      <a href="favorites.html">Favorites</a>
     </nav>
+    <div class="buttons">
+      <button id="search-btn">
+        <i class="fas fa-search"></i>
+      </button>
+      <button>
+        <i class="fas fa-shopping-cart"></i>
+      </button>
+      <button id="menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div class="search-form ">
+      <input type="text" class="search-input" id="search-box" placeholder="search here">
+      <i class="fas fa-search"></i>
+    </div>
+    <!-- <div class="cart-items-container">
+      <div class="cart-item">
+
+      </div>
+    </div> -->
+  </header>
+  <!--Home -->
+  <section class="home">
+    <div class="text">
+      <p>Delicious and healthy meals with "La Vita"</p>
+      <p>La vita è bella ,buon appetito</p>
+      <h1>"La Vita"</h1>
+      <a href="#menu" class="btn">Order Now</a>
+    </div>
+  </section>
+  <!-- Menu -->
+  <section class="menu" id="menu">
+    <h2 class="heading">- our <span> menu :</span></h2>
+    <div class="box-container">
+      <div class="box">
+        <div class="box-head">
+          <img src="images/about2.jpg" alt="menu">
+          <span class="menu-categori">FISH</span>
+          <h3>fish with soy sauce</h3>
+          <div class="price">$9.99 <span>15.99</span></div>
+        </div>
+        <div class="box-bottom">
+          <a href="#" class="btn">add to cart</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-head">
+          <img
+            src="https://images.immediate.co.uk/production/volatile/sites/30/2022/09/SesameLemonChicken-f1e5384.jpg?quality=90&webp=true&resize=375,341"
+            alt="menu">
+          <span class="menu-categori">chicken</span>
+          <h3>Crispy sesame lemon chicken</h3>
+          <div class="price">$15.99 <span>29.99</span></div>
+        </div>
+        <div class="box-bottom">
+          <a href="#" class="btn">add to cart</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-head">
+          <img src="images/fish-se2.jpg" alt="menu">
+          <span class="menu-categori">FISH</span>
+          <h3>Air-Fryer Tilapia</h3>
+          <div class="price">$21.99 <span>30.99</span></div>
+        </div>
+        <div class="box-bottom">
+          <a href="#" class="btn">add to cart</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-head">
+          <img
+            src="https://images.immediate.co.uk/production/volatile/sites/30/2022/09/CreamySpinachChicken-e6b2815.jpg?quality=90&webp=true&resize=375,341"
+            alt="menu">
+          <span class="menu-categori">chicken</span>
+          <h3>Creamy spinach chicken</h3>
+          <div class="price">$30.99 <span>37.99</span></div>
+        </div>
+        <div class="box-bottom">
+          <a href="#" class="btn">add to cart</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Products -->
+  <section class="products">
+    <h2 class="heading">- our <span>products :</span></h2>
+    <div class="box-container">
+      <div class="box">
+        <div class="box-head">
+          <span class="title">Vegetarian</span>
+          <a href="#" class="name">Lentil curry</a>
+        </div>
+        <div class="image">
+          <img
+            src="https://images.immediate.co.uk/production/volatile/sites/30/2010/02/Easy-lentil-curry-15e688f.jpg?quality=90&webp=true&resize=375,341"
+            alt="">
+        </div>
+        <div class="box-bottom">
+          <div class="info">
+            <b class="price">$17.00</b>
+            <span class="amount">kcal 432/protein 14g</span>
+          </div>
+          <div class="product-btn">
+            <a href="#">
+              <i class="fas fa-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-head">
+          <span class="title">Vegetarian</span>
+          <a href="#" class="name">gruyère tart</a>
+        </div>
+        <div class="image">
+          <img
+            src="https://images.immediate.co.uk/production/volatile/sites/30/2024/01/Caramelised-onion-squash-and-gruyere-tart-1983d77.jpg?quality=90&webp=true&resize=375,341"
+            alt="">
+        </div>
+        <div class="box-bottom">
+          <div class="info">
+            <b class="price">$13.00</b>
+            <span class="amount">kcal 362/protein 9g</span>
+          </div>
+          <div class="product-btn">
+            <a href="#">
+              <i class="fas fa-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-head">
+          <span class="title">Gluten-free</span>
+          <a href="#" class="name">prawn & lentil </a>
+        </div>
+        <div class="image">
+          <img
+            src="https://images.immediate.co.uk/production/volatile/sites/30/2021/01/Prawn-and-lentil-curry-a726c9f.jpg?quality=90&webp=true&resize=375,341"
+            alt="">
+        </div>
+        <div class="box-bottom">
+          <div class="info">
+            <b class="price">$24.00</b>
+            <span class="amount">kcal 267/protein 15g</span>
+          </div>
+          <div class="product-btn">
+            <a href="#">
+              <i class="fas fa-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About -->
+  <section class="about">
+    <h2 class="heading">- About<span> us:</span></h2>
+    <div class="box-container">
+      <div class="box">
+        <div class="image">
+          <img src="images/istockphoto-544559176-612x612.jpg" alt="">
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="images/homee.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="text">
+      <h4><b>"La Vinta"</b> offers you special recipes prepared from healthy foods."La Vita" offers you <span>HEALTHY
+          NUTRITION</span>.<br>Healthy nutrition is adequate and balanced nutrition. In order for the cells that make up
+        our body to function regularly and balancedly, we must take sufficient amounts of nutrients, namely fats,
+        carbohydrates, proteins, vitamins and minerals. Our body needs all the nutrients. It is wrong to have a
+        one-sided diet, that is, to eat only protein or carbohydrates. By eating a balanced diet, we also get important
+        nutrients such as vitamins, minerals and fiber.</h4>
+    </div>
+    <div class="box-container">
+      <div class="box">
+        <div class="image">
+          <img src="images/footph.jpg" alt="">
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="images/about.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Review -->
+  <section class=" review">
+    <h2 class="heading">- Customer's<span> review :</span></h2>
+    <div class="box-container">
+      <div class="box">
+        <img src="images/abstract-comment-logo-icon.jpg" alt="icon">
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Autem Nulla Repellendus Similique Porro Explicabo,
+          Blanditiis Voluptatibus Obcaecati Harum Est, Eos Quo Modi Alias. Possimus Odio Quam Ex Earum Ducimus! Officia.
+        </p>
+        <img src="images/avatar1.jpg" alt="avatar" class="user">
+        <h3>Jennifer Becker</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/abstract-comment-logo-icon.jpg" alt="icon">
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Autem Nulla Repellendus Similique Porro Explicabo,
+          Blanditiis Voluptatibus Obcaecati Harum Est, Eos Quo Modi Alias. Possimus Odio Quam Ex Earum Ducimus! Officia.
+        </p>
+        <img src="images/avatar-2.png" alt="avatar" class="user">
+        <h3>John Doe</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/abstract-comment-logo-icon.jpg" alt="icon">
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Autem Nulla Repellendus Similique Porro Explicabo,
+          Blanditiis Voluptatibus Obcaecati Harum Est, Eos Quo Modi Alias. Possimus Odio Quam Ex Earum Ducimus! Officia.
+        </p>
+        <img src="images/avatar3.jpg" alt="avatar" class="user">
+        <h3>Lisa Mark</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section class="contact">
+    <h2 class="heading">-Contact <span>us:</span></h2>
+    <div class="row">
+      <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77979.80009413049!2d4.9039604!3d52.354665649999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam%2C%20Niderland!5e0!3m2!1saz!2saz!4v1707396221527!5m2!1saz!2saz"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <form>
+        <h3>get in touch</h3>
+        <div class="inputBox">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="name">
+        </div>
+        <div class="inputBox">
+          <i class="fas fa-envelope"></i>
+          <input type="email" placeholder="email">
+        </div>
+        <div class="inputBox">
+          <i class="fas fa-phone"></i>
+          <input type="number" placeholder="number">
+        </div>
+        <input type="submit" class="btn" value="Contact Now">
+      </form>
+    </div>
+  </section>
+  <!-- Blog -->
+  <section class="blog">
+    <h2 class="heading">-our <span>blog:</span></h2>
+    <div class="box-container">
+      <div class="box">
+        <div class="image">
+          <img
+            src="https://images.immediate.co.uk/production/volatile/sites/30/2023/11/Roasted-red-pepper-soup-with-crispy-croutons-de7e29d.jpg?quality=90&webp=true&resize=375,341"
+            alt="">
+        </div>
+        <div class="content">
+          <a href="#" class="title">Why red pepper soup?</a>
+          <span>by admin / 15st February, 2023</span>
+          <p>Warm up on colder evenings with this vibrant soup, spiked with fiery chilli powder and harissa. The crispy
+            croutons are optional but add a satisfying crunch</p>
+          <a href="https://www.google.com/search?q=Roasted+red+pepper+soup+with+crispy+croutons&oq=Roasted+red+pepper+soup+with+crispy+croutons&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg8MgYIAhBFGDzSAQc0MThqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
+            class="btn">Read more</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img
+            src="https://images.immediate.co.uk/production/volatile/sites/30/2023/02/ChickenSoup-73a8eea.jpg?quality=90&webp=true&resize=375,341"
+            alt="">
+        </div>
+        <div class="content">
+          <a href="#" class="title">Why Cream of chicken soup?</a>
+          <span>by admin / 10st December, 2023</span>
+          <p>Eat this hot soup in a cold gunker, its composition is very useful. Serve with crusty bread and some
+            parsley, if desired.</p>
+          <a href="https://www.google.com/search?q=cream+of+chicken+soup&oq=Cream+of+chicken+soup&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyBwgBEAAYgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBggGEEUYPDIGCAcQRRg80gEHNTA1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
+            class="btn">Read more</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img
+            src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/mushroom_soup-9b55c55.jpg?quality=90&webp=true&resize=375,341"
+            alt="">
+        </div>
+        <div class="content">
+          <a href="#" class="title">Why Mushroom soup?</a>
+          <span>by admin / 3st September, 2023</span>
+          <p>Make the most of mushrooms with this comforting mushroom soup recipe made with cream, onions and garlic.
+            Serve for lunch or as a starter with crusty bread</p>
+          <a href="https://www.google.com/search?q=mushroom+soup&oq=Mushroom+soup&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyBwgBEC4YgAQyBwgCEAAYgAQyDAgDEAAYFBiHAhiABDIHCAQQABiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDE3OTNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
+            class="btn">Read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <section class="footer">
+    <div class="share">
+      <a href="#" class="fab fa-facebook"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-instagram"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+      <a href="#" class="fab fa-pinterest"></a>
+    </div>
+    <div class="creat">
+      <p>created by <span>I.Z </span>| all rigths reserved</p>
+    </div>
+  </section>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
