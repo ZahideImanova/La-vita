@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>La VITA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -13,7 +16,7 @@
         <a href="#" class="logo">
             <img src="images/food-logo.png" alt="">
         </a>
-        <nav class="navbar">
+        <nav class="navbar active">
             <a href="index.html" >Home</a>
             <a href="about.html" class="active">About</a>
             <a href="menu.html">Menu</a>
@@ -23,15 +26,56 @@
             <a href="blog.html">Blog</a>
         </nav>
         <div class="buttons">
-            <button>
+            <button id="search-btn">
                 <i class="fas fa-search"></i>
             </button>
-            <button>
+            <button id="cart-btn">
                 <i class="fas fa-shopping-cart"></i>
             </button>
-            <button>
+            <button id="menu-btn">
                 <i class="fas fa-bars"></i>
             </button>
+        </div>
+        <div class="search-form ">
+            <input type="text" class="search-input" id="search-box" placeholder="search here">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="images/about2.jpg" alt="menu">
+                <div class="content">
+                    <h3>cart item 01</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="https://images.immediate.co.uk/production/volatile/sites/30/2022/09/SesameLemonChicken-f1e5384.jpg?quality=90&webp=true&resize=375,341"
+                    alt="menu">
+                <div class="content">
+                    <h3>cart item 02</h3>
+                    <div class="price">$17.99/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="images/fish-se2.jpg" alt="menu">
+                <div class="content">
+                    <h3>cart item 03</h3>
+                    <div class="price">$22.99/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="https://images.immediate.co.uk/production/volatile/sites/30/2022/09/CreamySpinachChicken-e6b2815.jpg?quality=90&webp=true&resize=375,341"
+                    alt="menu">
+                <div class="content">
+                    <h3>cart item 04</h3>
+                    <div class="price">$13.99/-</div>
+                </div>
+            </div>
+            <a href="" class="btn">checkout now</a>
         </div>
     </header>
     <!-- About -->
@@ -55,7 +99,8 @@
                 the cells that make up our body to function regularly and balancedly, we must take sufficient amounts of
                 nutrients, namely fats, carbohydrates, proteins, vitamins and minerals. Our body needs all the
                 nutrients. It is wrong to have a one-sided diet, that is, to eat only protein or carbohydrates. By
-                eating a balanced diet, we also get important nutrients such as vitamins, minerals and fiber.</h4>
+                eating a balanced diet, we also get important nutrients such as vitamins, minerals and fiber.
+            </h4>
         </div>
         <div class="box-container">
             <div class="box">
@@ -70,7 +115,7 @@
             </div>
         </div>
     </section>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
